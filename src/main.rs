@@ -2,9 +2,9 @@ use std::env;
 
 use sqlx::PgPool;
 
-use crate::models::article::Article;
+use crate::entity::article::Article;
 
-pub mod models;
+pub mod entity;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
